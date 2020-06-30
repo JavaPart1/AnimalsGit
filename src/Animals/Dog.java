@@ -7,32 +7,34 @@ public class Dog {
         this.name = name;
     }
 
-    public void bark(){
-        System.out.println("WAF WAF");
+    public String bark(){
+        return "WAF WAF";
     }
 
-    public void beg(){
-        System.out.println("kieuw kiew");
+    public String beg(){
+        return "kieuw kiew";
     }
 
-    public void chase(){
-        System.out.println("Grrrr Grrr");
+    public String chase(){
+        return "Grrrr Grrr";
     }
 
-    public void react(String command){
+    public String react(String command){
+        String reaction = "";
         switch (command){
             case "speak": {
-                bark();
+                reaction = bark();
                 break;
             }
             case "beg": {
-                beg();
+                reaction = beg();
                 break;
             }
             case "look, the postman": {
-                chase();
+                reaction = chase();
                 break;
             }
         }
+        return reaction;
     }
 }
