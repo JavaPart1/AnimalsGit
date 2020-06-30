@@ -2,63 +2,53 @@ package Zoo;
 
 import Animals.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Zoo {
-    private Monkey[] monkeys;
-    private Cow[] cows;
-    private Turtle[] turtles;
-    private Tiger[] tigers;
-    private Elephant[] elephants;
+    private ArrayList<Monkey> monkeys = new ArrayList<>();
+    private ArrayList<Cow> cows = new ArrayList<>();
+    private ArrayList<Turtle> turtles = new ArrayList<>();
+    private ArrayList<Tiger> tigers = new ArrayList<>();
+    private ArrayList<Elephant> elephants = new ArrayList<>();
 
-    public Monkey[] getMonkeys() {
+    public void setElephant(Elephant elephantx) {
+        this.elephants.add(elephantx);
+    }
+
+    public void setTiger(Tiger tigerx) {
+        this.tigers.add(tigerx);
+    }
+
+    public void setTurtle(Turtle turtlex) {
+        this.turtles.add(turtlex);
+    }
+
+    public void setCow(Cow cowx) {
+        this.cows.add(cowx);
+    }
+
+    public void setMonkey(Monkey monkeyx) {
+        this.monkeys.add(monkeyx);
+    }
+
+    public ArrayList<Monkey> getMonkeys() {
         return monkeys;
     }
 
-    public void setMonkeys(Monkey[] monkeys) {
-        this.monkeys = monkeys;
-    }
-
-    public Cow[] getCows() {
+    public ArrayList<Cow> getCows() {
         return cows;
     }
 
-    public void setCows(Cow[] cows) {
-        this.cows = cows;
-    }
-
-    public Turtle[] getTurtles() {
+    public ArrayList<Turtle> getTurtles() {
         return turtles;
     }
 
-    public void setTurtles(Turtle[] turtles) {
-        this.turtles = turtles;
-    }
-
-    public Tiger[] getTigers() {
+    public ArrayList<Tiger> getTigers() {
         return tigers;
     }
 
-    public void setTigers(Tiger[] tigers) {
-        this.tigers = tigers;
-    }
-
-    public Elephant[] getElephants() {
+    public ArrayList<Elephant> getElephants() {
         return elephants;
-    }
-
-    public void setElephants(Elephant[] elephants) {
-        this.elephants = elephants;
-    }
-
-    @Override
-    public String toString() {
-        return "Zoo{" +
-                "monkeys=" + Arrays.toString(monkeys) +
-                ", cows=" + Arrays.toString(cows) +
-                ", turtles=" + Arrays.toString(turtles) +
-                ", tigers=" + Arrays.toString(tigers) +
-                ", elephants=" + Arrays.toString(elephants) +
-                '}';
     }
 }
