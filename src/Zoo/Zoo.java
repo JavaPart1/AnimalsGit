@@ -6,11 +6,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Zoo {
+    private String name;
     private ArrayList<Monkey> monkeys = new ArrayList<>();
     private ArrayList<Cow> cows = new ArrayList<>();
     private ArrayList<Turtle> turtles = new ArrayList<>();
     private ArrayList<Tiger> tigers = new ArrayList<>();
     private ArrayList<Elephant> elephants = new ArrayList<>();
+
+    public Zoo(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public void setElephant(Elephant elephantx) {
         this.elephants.add(elephantx);

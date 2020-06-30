@@ -6,7 +6,7 @@ import Zoo.Zoo;
 public class AnimalApp {
     public static void main(String[] args) {
         // Zoo aanmaken
-        Zoo parisdaiza = new Zoo();
+        Zoo parisdaiza = new Zoo("Pairi Daiza");
         // Cow aanmaken 7
         Cow cowB = new Cow("Bella",340.65,'v',3);
         parisdaiza.setCow(cowB);
@@ -51,7 +51,7 @@ public class AnimalApp {
         Turtle turtleM = new Turtle("Moon",0.39,'m',2);
         parisdaiza.setTurtle(turtleM);
         // Printen
-        System.out.println("Wat zit er in de zoo :");
+        System.out.println("Wat zit er in de zoo : " + parisdaiza.getName());
         System.out.println(parisdaiza.allAnimalsInZoo());
     }
 }
