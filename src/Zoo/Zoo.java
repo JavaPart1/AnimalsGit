@@ -72,6 +72,33 @@ public class Zoo {
                     elephants.get(i).getLeeftijd() + " jaar oud.\n";
 
         }
+        // Alle monkeys
+        allAnimals += "monkeys: \n";
+        for (int i = 0; i < monkeys.size(); i++) {
+            allAnimals += monkeys.get(i).getNaam() + " (" +
+                    monkeys.get(i).getGeslacht() + ") weegt " +
+                    monkeys.get(i).getGewicht() + " en is " +
+                    monkeys.get(i).getLeeftijd() + " jaar oud.\n";
+
+        }
+        // Alle tigers
+        allAnimals += "tigers: \n";
+        for (int i = 0; i < tigers.size(); i++) {
+            allAnimals += tigers.get(i).getNaam() + " (" +
+                    tigers.get(i).getGeslacht() + ") weegt " +
+                    tigers.get(i).getGewicht() + " en is " +
+                    tigers.get(i).getLeeftijd() + " jaar oud.\n";
+
+        }
+        // Alle turtles
+        allAnimals += "turtles: \n";
+        for (int i = 0; i < turtles.size(); i++) {
+            allAnimals += turtles.get(i).getNaam() + " (" +
+                    turtles.get(i).getGeslacht() + ") weegt " +
+                    turtles.get(i).getGewicht() + " en is " +
+                    turtles.get(i).getLeeftijd() + " jaar oud.\n";
+
+        }
         return allAnimals;
 
     }
