@@ -12,4 +12,20 @@ public class Animal {
         this.geslacht = geslacht;
         this.leeftijd = leeftijd;
     }
+
+    public String getNaam() {
+        return naam;
+    }
+
+    public double getGewicht() {
+        return gewicht;
+    }
+
+    public char getGeslacht() {
+        return geslacht;
+    }
+
+    public int getLeeftijd() {
+        return leeftijd;
+    }
 }

@@ -51,4 +51,39 @@ public class Zoo {
     public ArrayList<Elephant> getElephants() {
         return elephants;
     }
+
+    public String allAnimalsInZoo(){
+        String allAnimals;
+        // Alle cows
+        allAnimals = "Cows: \n";
+        for (int i = 0; i < cows.size(); i++) {
+            allAnimals += cows.get(i).getNaam() + " (" +
+                    cows.get(i).getGeslacht() + ") weegt " +
+                    cows.get(i).getGewicht() + " en is " +
+                    cows.get(i).getLeeftijd() + " jaar oud.\n";
+
+        }
+        // Alle elephants
+        allAnimals += "Elephants: \n";
+        for (int i = 0; i < elephants.size(); i++) {
+            allAnimals += elephants.get(i).getNaam() + " (" +
+                    elephants.get(i).getGeslacht() + ") weegt " +
+                    elephants.get(i).getGewicht() + " en is " +
+                    elephants.get(i).getLeeftijd() + " jaar oud.\n";
+
+        }
+        return allAnimals;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Zoo{" +
+                "monkeys=" + monkeys +
+                ", cows=" + cows +
+                ", turtles=" + turtles +
+                ", tigers=" + tigers +
+                ", elephants=" + elephants +
+                '}';
+    }
 }
